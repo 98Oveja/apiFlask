@@ -3,5 +3,5 @@ Flask-cors==3.0.10
 keras==2.3.1
 mediapipe==0.8.11
 numpy==1.19.5
-opencv-python==4.6.0.66
+opencv-python
 gunicorn
