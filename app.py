@@ -7,6 +7,7 @@ from keras.applications.imagenet_utils import preprocess_input
 from flask import Flask
 from flask import render_template
 from flask import Response
+from flask import CORS
 
 import mediapipe as mp
 import time
@@ -15,6 +16,8 @@ import cv2
 import os
 
 app = Flask(__name__)
+CORS(app)
+
 mp_holistic = mp.solutions.holistic #modelo de mp
 mp_drawing = mp.solutions.drawing_utils #importando utilidades
 # Path del modelo preentrenado
