@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # Este archivo usa el encoding: utf-8
 # Keras
+from wsgiref.simple_server import make_server
 from tensorflow.keras.models import load_model
 from keras.applications.imagenet_utils import preprocess_input
 # Flask
 from flask import Flask
 from flask import render_template
 from flask import Response
-from flask import CORS
 
 import mediapipe as mp
 import time
@@ -16,7 +16,6 @@ import cv2
 import os
 
 app = Flask(__name__)
-CORS(app)
 
 mp_holistic = mp.solutions.holistic #modelo de mp
 mp_drawing = mp.solutions.drawing_utils #importando utilidades
