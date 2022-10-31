@@ -5,4 +5,3 @@ mediapipe==0.8.11
 numpy==1.22.3
 streamlit==1.14.0
 gunicorn
-# python3.9, tensorflow, keras, numpy, flask, mediapipe,streamlit
