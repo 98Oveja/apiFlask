@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # Este archivo usa el encoding: utf-8
 # Keras
-from wsgiref.simple_server import make_server
 from tensorflow.keras.models import load_model
 from keras.applications.imagenet_utils import preprocess_input
 # Flask
